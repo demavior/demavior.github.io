@@ -3,27 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>D. Martin Vivas - Portfolio</title>
+    <title>Martin Vivas Portfolio</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <img src="profile.jpeg" alt="Martin Vivas" class="profile-photo">
-        <h1>D. Martin Vivas</h1>
-        <p>MS Computer Science - Purdue University</p>
-        <p>Email: vivasdema@gmail.com | Cellphone: (260)255-2784</p>
+        <nav>
+            <a href="#hero">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </header>
-    <nav>
-        <a href="#about">About</a>
-        <!-- <a href="#education">Education</a> -->
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#extracurricular">Extracurricular</a>
-    </nav>
+    <section id="hero">
+        <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+        <h1>D. Martin Vivas</h1>
+        <p>Software Developer | Data Analyst | Database enthusiast | Software Developer</p>
+        <div class="hero-buttons">
+            <a href="resume.pdf" download class="btn">Download Resume</a>
+            <a href="#projects" class="btn">View My Work</a>
+            <a href="#contact" class="btn">Contact Me</a>
+        </div>
+    </section>
+    
     <section id="about">
-        <h2>Objective Statement</h2>
+        <h2>About Me</h2>
         <p>I am a dedicated Software Developer with a strong focus on data analytics and visualization. I specialize in identifying insights, generating actionable reports, and collaborating with teams to inform data-driven decision-making. With a passion for leveraging technical expertise, I aim to contribute to impactful projects that enhance business success. I am open to roles that blend software development and data analysis, ensuring continuous learning and growth. I am particularly interested in contributing to business optimization through the application of new technologies.</p>
     </section>
     <section id="skills">
@@ -74,83 +82,76 @@
             <div class="box">
                 <h3>Project Management & Collaboration</h3>
                 <ul>
-                    <li>Trello</li>
-                    <li>Jira</li>
-                    <li>Scrum</li>
-                    <li>Agile</li>
+                    <li>Trello, Jira</li>
+                    <li>Scrum, Agile</li>
                 </ul>
             </div>
         </div>
     </section>
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>Student Service - TAP Projects (Purdue University)</h3>
-        <ul>
-            <li>Coordinated multiple projects with colleagues and professors.</li>
-            <li>Performed data cleaning and wrangling.</li>
-            <li>Conducted QA on code, improving and correcting errors.</li>
-            <li>Analyzed data and created visualizations for clients.</li>
-        </ul>
-        <h3>Senior Software Developer (Cloud Information Solution)</h3>
-        <ul>
-            <li>Migrated ERP software from Oracle Forms to Jdeveloper using Java and Groovy.</li>
-            <li>Optimized, modified, and created features in software databases using PL/SQL.</li>
-            <li>Instructed, coordinated, and assigned tasks to Junior Developers.</li>
-            <li>Interfaced with customers to understand needs and requirements.</li>
-        </ul>
-        <!-- Add other roles similarly -->
-    </section>
     <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Learning Assistant</h3>
-            <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction. Users can make notes based on processed transcriptions.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Analysis on Patients Experience in Public Health</h3>
-            <p>Conducted a comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Sales Data Analysis</h3>
-            <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Bowling Scoring System</h3>
-            <p>API leader for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Topos Room Draw Process</h3>
-            <p>Developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
-            <a href="#">View Project</a>
+        <h2>My Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Learning Assistant</h3>
+                <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Patients Experience in Public Health</h3>
+                <p>Conducted comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
+                <a href="#">View Details</a>
+            </div>
+            <div class="project-card">
+                <h3>Sales Data Analysis</h3>
+                <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Bowling Scoring System</h3>
+                <p>API leader for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
+                <a href="#">View Project</a>
+            </div>
+            <div class="project-card">
+                <h3>Topos Room Draw Process</h3>
+                <p>Developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
+                <a href="#">View Project</a>
+            </div>
         </div>
     </section>
-    <section id="extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <ul>
-            <li>Member, Hispanos Unidos (2024)</li>
-            <li>Leader and co-founder, Spanish Club at Huntington University (2008–2012)</li>
-            <li>Team Champion, Crossroad League Tennis Team (2010)</li>
-            <!-- Add more here -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out to me at:</p>
+        <ul class="contact-list">
+            <li>
+                <i class="fas fa-envelope"></i> 
+                <strong>Email:</strong> 
+                <a href="mailto:vivasdema@gmail.com">vivasdema@gmail.com</a>
+            </li>
+            <li>
+                <i class="fab fa-linkedin"></i>
+                <strong>LinkedIn:</strong> 
+                <a href="https://linkedin.com/in/demavior" target="_blank">linkedin.com/in/demavior</a>
+            </li>
+            <li>
+                <i class="fab fa-github"></i>
+                <strong>GitHub:</strong> 
+                <a href="https://github.com/demavior" target="_blank">github.com/demavior</a>
+            </li>
         </ul>
     </section>
+    
     <footer>
-        <p>&copy; 2024 Dennis Martin Vivas. All rights reserved.</p>
+        <p>&copy; 2024 Martin Vivas. All rights reserved.</p>
     </footer>
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-<script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggleIcon = document.querySelector(".toggle-icon");
-      const classList = document.querySelector(".class-list");
-  
-      toggleIcon.addEventListener("click", () => {
-        classList.classList.toggle("hidden");
-        toggleIcon.textContent = classList.classList.contains("hidden") ? "▼" : "▲";
-      });
-    });
-  </script>
-  
