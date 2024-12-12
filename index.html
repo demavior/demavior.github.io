@@ -9,19 +9,148 @@
 </head>
 <body>
     <header>
+        <img src="profile.jpeg" alt="Martin Vivas" class="profile-photo">
         <h1>D. Martin Vivas</h1>
+        <p>MS Computer Science - Purdue University</p>
         <p>Email: vivasdema@gmail.com | Cellphone: (260)255-2784</p>
     </header>
     <nav>
         <a href="#about">About</a>
-        <a href="#education">Education</a>
+        <!-- <a href="#education">Education</a> -->
         <a href="#skills">Skills</a>
         <a href="#experience">Experience</a>
         <a href="#projects">Projects</a>
         <a href="#extracurricular">Extracurricular</a>
     </nav>
+    <section id="about">
+        <h2>Objective Statement</h2>
+        <p>I am a dedicated Software Developer with a strong focus on data analytics and visualization. I specialize in identifying insights, generating actionable reports, and collaborating with teams to inform data-driven decision-making. With a passion for leveraging technical expertise, I aim to contribute to impactful projects that enhance business success. I am open to roles that blend software development and data analysis, ensuring continuous learning and growth. I am particularly interested in contributing to business optimization through the application of new technologies.</p>
+    </section>
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="container">
+            <div class="box">
+                <h3>Data Analytics & Visualization</h3>
+                <ul>
+                    <li>Pandas, Numpy, Matplotlib</li>
+                    <li>ETL Processes, Data Wrangling</li>
+                    <li>Exploratory Data Analysis</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Databases</h3>
+                <ul>
+                    <li>SQL: Oracle SQL, PL/SQL, MySQL, SQL Server</li>
+                    <li>ER Models, Data Modeling and Design</li>
+                    <li>Django, FastAPI</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Machine Learning & Deep Learning</h3>
+                <ul>
+                    <li>TensorFlow, Keras</li>
+                    <li>OpenAI, Hugging Faces</li>
+                    <li>Jupyter Notebooks, Google Colab</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Programming</h3>
+                <ul>
+                    <li>Python, R, Java</li>
+                    <li>Eclipse, IntelliJ, NetBeans, JDeveloper</li>
+                    <li>VS Code</li>
+                    <li>GitHub</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Cloud & Web Development</h3>
+                <ul>
+                    <li>Google Cloud Platform</li>
+                    <li>HTML, CSS, JavaScript</li>
+                    <li>React, Sass</li>
+                    <li>Docker</li>
+                </ul>
+            </div>
+            <div class="box">
+                <h3>Project Management & Collaboration</h3>
+                <ul>
+                    <li>Trello</li>
+                    <li>Jira</li>
+                    <li>Scrum</li>
+                    <li>Agile</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h2>Work Experience</h2>
+        <h3>Student Service - TAP Projects (Purdue University)</h3>
+        <ul>
+            <li>Coordinated multiple projects with colleagues and professors.</li>
+            <li>Performed data cleaning and wrangling.</li>
+            <li>Conducted QA on code, improving and correcting errors.</li>
+            <li>Analyzed data and created visualizations for clients.</li>
+        </ul>
+        <h3>Senior Software Developer (Cloud Information Solution)</h3>
+        <ul>
+            <li>Migrated ERP software from Oracle Forms to Jdeveloper using Java and Groovy.</li>
+            <li>Optimized, modified, and created features in software databases using PL/SQL.</li>
+            <li>Instructed, coordinated, and assigned tasks to Junior Developers.</li>
+            <li>Interfaced with customers to understand needs and requirements.</li>
+        </ul>
+        <!-- Add other roles similarly -->
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card">
+            <h3>Learning Assistant</h3>
+            <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction. Users can make notes based on processed transcriptions.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Analysis on Patients Experience in Public Health</h3>
+            <p>Conducted a comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Sales Data Analysis</h3>
+            <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Bowling Scoring System</h3>
+            <p>API leader for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
+            <a href="#">View Project</a>
+        </div>
+        <div class="project-card">
+            <h3>Topos Room Draw Process</h3>
+            <p>Developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
+            <a href="#">View Project</a>
+        </div>
+    </section>
+    <section id="extracurricular">
+        <h2>Extracurricular Activities</h2>
+        <ul>
+            <li>Member, Hispanos Unidos (2024)</li>
+            <li>Leader and co-founder, Spanish Club at Huntington University (2008–2012)</li>
+            <li>Team Champion, Crossroad League Tennis Team (2010)</li>
+            <!-- Add more here -->
+        </ul>
+    </section>
     <footer>
         <p>&copy; 2024 Dennis Martin Vivas. All rights reserved.</p>
     </footer>
 </body>
 </html>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggleIcon = document.querySelector(".toggle-icon");
+      const classList = document.querySelector(".class-list");
+  
+      toggleIcon.addEventListener("click", () => {
+        classList.classList.toggle("hidden");
+        toggleIcon.textContent = classList.classList.contains("hidden") ? "▼" : "▲";
+      });
+    });
+  </script>
+  
