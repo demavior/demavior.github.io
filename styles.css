@@ -1,56 +1,12 @@
 /* Define Color Variables */
 :root {
-    --primary-color: #1e3a8a; /* Main blue */
-    --secondary-color: #2563eb; /* Secondary blue */
-    --accent-color: #1e40af; /* Accent darker blue */
-    --text-color: #333; /* General text */
-    --background-color: #f4f4f9; /* Background */
-    --card-bg: #edf2f7;
-    --card-hover-bg: #d1dce5;
-    --link-color: #2563eb; /* Links */
-    --link-hover-color: #1e40af; /* Link hover */
+    --primary-color: #4a3799;
+    --secondary-color: #90acff;
+    --accent-color: #101060;
+    --text-color: #333;
+    --bg-color: #edf2f7;
+    --bg-color-2: #d1dce5;
 }
-/* Blue-Gray*/
-:root {
-    --primary-color: #2b3a67;
-    --secondary-color: #3e5c99;
-    --accent-color: #1d3557;
-    --text-color: #2d3748;
-    --background-color: #e8ecf3;
-    --card-bg: #f4f7fc;
-    --card-hover-bg: #d1dce5;
-    --link-color: #5a7fb5;
-    --link-hover-color: #4a6fa3;
-} 
-
-/* Neutral Grey
-:root {
-    --primary-color: #374151;
-    --secondary-color: #4b5563;
-    --accent-color: #1f2937;
-    --text-color: #111827;
-    --background-color: #f9fafb;
-    --card-bg: #e5e7eb;
-    --card-hover-bg: #d1d5db;
-    --link-color: #2563eb;
-    --link-hover-color: #1e40af;
-} */
-/* Elegant dark blue
-:root {
-    --primary-color: #1c3b57;
-    --secondary-color: #285e8e;
-    --accent-color: #163147;
-    --background-color: #f7fafc;
-    --text-color: #1a202c;
-    --card-bg: #edf2f7;
-    --card-hover-bg: #d1dce5;
-    --link-color: #285e8e;
-    --link-hover-color: #1c3b57;
-    --footer-bg: #1c3b57;
-    --header-bg: #1c3b57;
-} 
-
-
 
 /* General Reset */
 * {
@@ -64,7 +20,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     color: var(--text-color);
-    background-color: var(--background-color);
+    background-color: var(--bg-color);
 }
 
 /* Header and Navigation */
@@ -75,7 +31,7 @@ header {
 }
 
 nav a {
-    color: var(--card-hover-bg);
+    color: var(--bg-color-2);
     text-decoration: none;
     margin: 0 1rem;
     font-weight: 700;
@@ -161,7 +117,7 @@ h2 {
 }
 
 .box {
-    background: var(--card-bg);
+    background: var(--bg-color);
     padding: 1rem;
     text-align: center;
     border: 1px solid #ddd;
@@ -174,7 +130,7 @@ h2 {
 }
 .box:hover {
     transform: scale(1.02);
-    background-color: var(--card-hover-bg);
+    background-color: var(--bg-color-2);
 }
 
 h3 {
