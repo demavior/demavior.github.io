@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D. Martin Vivas - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
@@ -20,13 +20,13 @@
         </nav>
     </header>
     <section id="hero">
-        <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
+        <img src="images/profile.jpeg" alt="Profile Picture" class="profile-pic">
         <h1>D. Martin Vivas</h1>
         <p>Software Developer | Data Analyst | Database Expert</p>
         <div class="hero-buttons">
             <a href="./resume.html" download class="btn">Resume</a>
-            <a href="#projects" class="btn">View My Work</a>
-            <a href="#contact" class="btn">Contact Me</a>
+            <a href="#projects" class="btn">Projects</a>
+            <a href="#contact" class="btn">Contact</a>
         </div>
     </section>
     
@@ -36,85 +36,102 @@
     </section>
     <section id="skills">
         <h2>Technical Skills</h2>
-        <div class="container">
-            <div class="box">
-                <h3>Data Analytics & Visualization</h3>
+        <div class="skills-container">
+            <div class="skills-item">
+                <h3><i class="fas fa-chart-bar"></i> Data Analytics & Visualization</h3>
                 <ul>
-                    <li>Pandas, Numpy, Matplotlib</li>
-                    <li>ETL Processes, Data Wrangling</li>
-                    <li>Exploratory Data Analysis</li>
+                    <li><i class="fas fa-code"></i> Pandas, Numpy, Matplotlib</li>
+                    <li><i class="fas fa-database"></i> ETL Processes, Data Wrangling</li>
+                    <li><i class="fas fa-search"></i> Exploratory Data Analysis</li>
                 </ul>
             </div>
-            <div class="box">
-                <h3>Databases</h3>
+            <div class="skills-item">
+                <h3><i class="fas fa-database"></i> Databases</h3>
                 <ul>
-                    <li>SQL: Oracle SQL, PL/SQL, MySQL, SQL Server</li>
-                    <li>ER Models, Data Modeling and Design</li>
-                    <li>Django, FastAPI</li>
+                    <li><i class="fas fa-database"></i> Oracle SQL, PL/SQL, MySQL, SQL Server</li>
+                    <li><i class="fas fa-project-diagram"></i> ER Models, Data Modeling and Design</li>
+                    <li><i class="fas fa-server"></i> Django, FastAPI</li>
                 </ul>
             </div>
-            <div class="box">
-                <h3>Machine Learning & Deep Learning</h3>
+            <div class="skills-item">
+                <h3><i class="fas fa-robot"></i> Machine Learning</h3>
                 <ul>
-                    <li>TensorFlow, Keras</li>
-                    <li>OpenAI, Hugging Faces</li>
-                    <li>Jupyter Notebooks, Google Colab</li>
+                    <li><i class="fas fa-brain"></i> TensorFlow, Keras</li>
+                    <li><i class="fas fa-robot"></i> OpenAI, Hugging Faces</li>
+                    <li><i class="fas fa-laptop-code"></i> Jupyter Notebooks, Google Colab</li>
                 </ul>
             </div>
-            <div class="box">
-                <h3>Programming</h3>
+            <div class="skills-item">
+                <h3><i class="fas fa-code"></i> Programming</h3>
                 <ul>
-                    <li>Python, R, Java</li>
-                    <li>Eclipse, IntelliJ, NetBeans, JDeveloper</li>
-                    <li>VS Code</li>
-                    <li>GitHub</li>
+                    <li><i class="fas fa-code"></i> Python, R, Java</li>
+                    <li><i class="fas fa-tools"></i> Eclipse, IntelliJ, NetBeans, JDeveloper</li>
+                    <li><i class="fas fa-code"></i> VS Code</li>
+                    <li><i class="fab fa-github"></i> GitHub</li>
                 </ul>
             </div>
-            <div class="box">
-                <h3>Cloud & Web Development</h3>
+            <div class="skills-item">
+                <h3><i class="fas fa-cloud"></i> Cloud & Web Development</h3>
                 <ul>
-                    <li>Google Cloud Platform</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React, Sass</li>
-                    <li>Docker</li>
+                    <li><i class="fas fa-cloud"></i> Google Cloud Platform</li>
+                    <li><i class="fab fa-html5"></i> HTML, CSS, JavaScript</li>
+                    <li><i class="fab fa-react"></i> React, Sass</li>
+                    <li><i class="fab fa-docker"></i> Docker</li>
                 </ul>
             </div>
-            <div class="box">
-                <h3>Project Management & Collaboration</h3>
+            <div class="skills-item">
+                <h3><i class="fas fa-project-diagram"></i> Project Management</h3>
                 <ul>
-                    <li>Trello, Jira</li>
-                    <li>Scrum, Agile</li>
+                    <li><i class="fas fa-tasks"></i> Trello, Jira</li>
+                    <li><i class="fas fa-clock"></i> Asana, Zoho Desk</li>
+                    <li><i class="fas fa-users"></i> Scrum, Agile</li>
+                    <li><i class="fas fa-code-branch"></i> GitHub</li>
                 </ul>
             </div>
         </div>
     </section>
     <section id="projects">
         <h2>My Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-flex">
             <div class="box">
-                <h3>Learning Assistant</h3>
-                <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction.</p>
-                <a href="#">View Details</a>
+                <img src="images/image.jpg" alt="Learning Assistant Image">
+                <div class="content">
+                    <h3>Learning Assistant</h3>
+                    <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction.</p>
+                    <a href="#">View Details</a>
+                </div>
             </div>
             <div class="box">
-                <h3>Patients Experience in Public Health</h3>
-                <p>Conducted comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
-                <a href="#">View Details</a>
+                <img src="images/image.jpg" alt="Patients Experience in Public Health Image">
+                <div class="content">
+                    <h3>Patients Experience in Public Health</h3>
+                    <p>Conducted comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
+                    <a href="#">View Details</a>
+                </div>
             </div>
             <div class="box">
-                <h3>Sales Data Analysis</h3>
-                <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
-                <a href="#">View Project</a>
+                <img src="images/image.jpg" alt="Sales Data Analysis Image">
+                <div class="content">
+                    <h3>Sales Data Analysis</h3>
+                    <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
             <div class="box">
-                <h3>Bowling Scoring System</h3>
-                <p>API developer for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
-                <a href="#">View Project</a>
+                <img src="images/image.jpg" alt="Bowling Scoring System Image">
+                <div class="content">
+                    <h3>Bowling Scoring System</h3>
+                    <p>API developer for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
             <div class="box">
-                <h3>Topos Room Draw Process</h3>
-                <p>Designed and developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
-                <a href="#">View Project</a>
+                <img src="images/image.jpg" alt="Topos Room Draw Process Image">
+                <div class="content">
+                    <h3>Topos Room Draw Process</h3>
+                    <p>Designed and developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
+                    <a href="#">View Project</a>
+                </div>
             </div>
         </div>
     </section>
@@ -152,6 +169,13 @@
                 });
             });
         });
+        document.querySelectorAll('.accordion-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const accordionItem = header.parentElement;
+        accordionItem.classList.toggle('active');
+    });
+});
+
     </script>
 </body>
 </html>
