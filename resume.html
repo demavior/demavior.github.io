@@ -4,139 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D. Martin Vivas - Resume</title>
-    <link rel="stylesheet" href="css/resume.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/resume.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="images/profile.jpeg" alt="Martin Vivas" class="profile-photo">
-        <h1>D. Martin Vivas</h1>
-        <p>MS Computer Science - Purdue University</p>
-        <p>Email: vivasdema@gmail.com | Cellphone: (260)255-2784</p>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <!-- <a href="#education">Education</a> -->
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#extracurricular">Extracurricular</a>
-    </nav>
-    <section id="about">
-        <h2>Objective Statement</h2>
-        <p>I am a dedicated Software Developer with a strong focus on data analytics and database. I specialize in identifying insights, generating actionable reports, and collaborating with teams to inform data-driven decision-making. With a passion for leveraging technical expertise, I aim to contribute to impactful projects that enhance business success. I am open to roles that blend software development and data analysis, ensuring continuous learning and growth. I am particularly interested in contributing to business optimization through the application of new technologies.</p>
-    </section>
-    <!-- <section id="skills">
-        <h2>Technical Skills</h2>
-        <div class="container">
-            <div class="box">
-                <h3>Data Analytics & Visualization</h3>
-                <ul>
-                    <li>Pandas, Numpy, Matplotlib</li>
-                    <li>ETL Processes, Data Wrangling</li>
-                    <li>Exploratory Data Analysis</li>
-                </ul>
+    <div class="resume container">
+        <article class="wrapper mx-auto theme-bg-light p-4 my-4 shadow-lg">
+            <div class="header group">
+                <div class="title col-12 col-md-6 col-lg-8 col-xl-9">
+                    <h1>D. Martin Vivas</h1>
+                    <p>MS Computer Science - Purdue University</p>
+                </div>
+                <div class="contact-info col-12 col-md-6 col-lg-4 col-xl-3">
+                    <ul class="list-unstyled mb-0">
+                        <li><i class="fas fa-envelope"></i><a href="mailto: vivasdema@gmail.com"> vivasdema@gmail.com</a></li>
+                        <li><i class="fa fa-phone"></i></i><a href="tel:2602552784"> (260) 255 2784</a></li>
+                        <li><i class="fab fa-linkedin"></i><a href="https://www.linkedin.com/in/demavior/" target="_blank"> www.linkedin.com/in/demavior/</a></li>
+                        <!-- <li><a href="demavior.github.io" target="_blank">GitHub</a></li> -->
+                        <li><i class='fas fa-map-marker-alt'></i> Fort Wayne, IN</li>
+                    </ul>
+                </div>
             </div>
-            <div class="box">
-                <h3>Databases</h3>
-                <ul>
-                    <li>SQL: Oracle SQL, PL/SQL, MySQL, SQL Server</li>
-                    <li>ER Models, Data Modeling and Design</li>
-                    <li>Django, FastAPI</li>
-                </ul>
+            <div class="group">
+                <div class="image col-12 col-md-3 col-xl-2 text-center">
+                    <img src="images/profile.jpeg" alt="Martin Vivas" class="profile-photo mb-3 mb-md-0 me-md-5  ms-md-0 mx-auto">
+                </div>
+                <div class="intro-text col text-start">
+                    <p class="mb-0">I am a dedicated Software Developer focusing on data science and analytics, with extensive experience in database programming. I have a strong background in leveraging various programming languages and SQL to extract insights and drive informed decision-making. I am skilled in leading analytical projects and communicating complex findings to stakeholders. Committed to continuous learning, I am eager to contribute my expertise in data analytics to create innovative solutions and drive business success.</p>
+                </div>
             </div>
-            <div class="box">
-                <h3>Machine Learning & Deep Learning</h3>
-                <ul>
-                    <li>TensorFlow, Keras</li>
-                    <li>OpenAI, Hugging Faces</li>
-                    <li>Jupyter Notebooks, Google Colab</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>Programming</h3>
-                <ul>
-                    <li>Python, R, Java</li>
-                    <li>Eclipse, IntelliJ, NetBeans, JDeveloper</li>
-                    <li>VS Code</li>
-                    <li>GitHub</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>Cloud & Web Development</h3>
-                <ul>
-                    <li>Google Cloud Platform</li>
-                    <li>HTML, CSS, JavaScript</li>
-                    <li>React, Sass</li>
-                    <li>Docker</li>
-                </ul>
-            </div>
-            <div class="box">
-                <h3>Project Management & Collaboration</h3>
-                <ul>
-                    <li>Trello</li>
-                    <li>Jira</li>
-                    <li>Scrum</li>
-                    <li>Agile</li>
-                </ul>
+            <div class="group">
+                <div class="main col-12 col-lg-8 col-xl-8 pe-0 -lg-5">
+                    <section id="experience">
+                        <h2>Work Experience</h2>
+                        <h3>Data Analyst & QA - TAP (Purdue University Fort Wayne, IN) 2024</h3>
+                        <ul>
+                            <li>Coordinated multiple projects with colleagues and professors, ensuring timely completion.</li>
+                            <li>Performed data cleaning, data wrangling, and EDA using Python.</li>
+                            <li>Conducted QA on code, improving and correcting errors and communicating solutions</li>
+                            <li>Analyzed data and created visualizations of the information for the client.</li>
+                        </ul>
+                        <h3>Senior Software Developer (Cloud Information Solution Lima, Peru) 2015 - 2022</h3>
+                        <ul>
+                            <li>Migrated ERP software from Oracle Forms to Jdeveloper using Java and Groovy, improving UI.</li>
+                            <li>Created and modified features in the database and front-end enhancing functionality, using PL/SQL.</li>
+                            <li>Optimized and corrected features to enhance response time in reports and processes, achieving over a 100% improvement in efficiency for several critical tasks.</li>
+                            <li>Instructed, coordinated, and assigned tasks to Junior Developers, fostering teamwork.</li>
+                            <li>Met with customers to understand their needs and requirements, ensuring customer satisfaction.</li>
+                        </ul>
+                        <h3>Junior Software Developer (Intratego Lima, Peru) 2014 - 2015</h3>
+                        <ul>
+                            <li>Planned, analyzed, and developed new functionalities in ERP software using PL/SQL.</li>
+                            <li>Created and modified forms and reports in ERP software according to needs.</li>
+                            <li>Developed a ticketing system to track client requirements and employee activities.</li>
+                        </ul>
+                        <h3>Global Information System Intern (Franklin Electric Bluffton, IN) 2012 - 2013</h3>
+                        <ul>
+                            <li>Set up computers for employees using computer images, according to their needs.</li>
+                            <li>Troubleshooted computer-related problems and assisted employees.</li>
+                            <li>Managed employee computer lease swaps and returns effectively.</li>
+                        </ul>
+                    </section>
+                    <section id="projects">
+                        <h2>Projects</h2>
+                        <div>
+                            <h3>Patience’s Experience for Public Health: Data Analysis on the Public Health System</h3>
+                            <ul>
+                                <li>Technologies Used: Python, Pandas, Numpy, Matplotlib, EDA, GitHub</li>
+                                <li>Focused on patient satisfaction data, analyzing eight features and 100,000 records.</li>
+                                <li>Analyzed and generated visualization for satisfaction by region and state</li>
+                                <li>Key Findings: Overall the experience of public healthcare nationwide is consistent but the Midwest has a slightly better experience.</li>
+                        </div>
+                        <div>
+                            <h3>Learning Assistant: Enhancing Classroom Accessibility for diverse learning needs</h3>
+                            <ul>
+                                <li>Technologies Used: Python, FastAPI, OpenAI, Google APIs, HTML, CSS, JavaScript, Google Cloud Platform, Docker</li>
+                                <li>Developed a web application to assist students with diverse learning needs.</li>
+                                <li>Enabled live microphone transcription into text</li>
+                                <li>Implemented translation, summarization, and text correction features</li>
+                                <li>Deployed the application on Google Cloud Platform using Docker</li>
+                                <li>Coordinated with the sponsor to gather requirements, and ensure the project met expectations</li>
+                                <li>Sponsor Feedback: The sponsor was impressed with the final product and the team’s ability to deliver a high-quality solution</li>
+                            </ul>
+                        </div>
+                        <!-- <div>
+                            <h3>Sales Data Analysis</h3>
+                            <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
+                            <a href="#">View Project</a>
+                        </div> -->
+                        <div>
+                            <h3>Bowling Scoring System: API team providing back-end solution</h3>
+                            <ul>
+                                <li>Technologies Used: Java, Spring Boot, IntelliJ, Postgress, Postman, GitHub</li>
+                                <li>Led the API team, coordinating with front-end team members to ensure seamless integration.</li>
+                                <li>Facilitated regular team meetings to discuss progress, challenges, and next steps.</li>
+                                <li>Designed the Database Schema and coordinated the endpoints with team members.</li>
+                                <li>Enabled users to create teams, join leagues, report scores, and access information.</li>
+                                <li>Developed administrator features for managing leagues, matches and score.</li>
+                            </ul>
+                            <!-- <a href="#">View Project</a> -->
+                        </div>
+                        <div>
+                            <h3>Topos: Room Draw process for Huntington University</h3>
+                            <ul>
+                                <li>Technologies Used: ASP.NET, SQL Server</li>
+                                <li>Student side: Enabled students to choose a roomate, reserve a room based view the floor layout.</li>
+                                <li>Admin side: Provided tools for administrators to supervise the process, and modify room selection.</li>
+                                <li>Feedback: The system was implemente and well received by students, who found it easy and more time efficient. However the system was used only for two years, due to lack of support from the administration.</li>
+                            </ul>
+                        </div>
+                    </section>
+                </div>
+                <aside class="aside col-12 col-lg-4 col-xl-4 px-lg-4 pb-lg-4">
+                    <section id="skills">
+                        <h2>Technical Skills</h2>
+                        <div>
+                            <div class="box">
+                                <h4>Data Analytics & Visualization</h3>
+                                <ul class="list-unstyled mb-1">
+                                    <li>Pandas, Numpy, Matplotlib</li>
+                                    <li>ETL Processes, Data Wrangling</li>
+                                    <li>Exploratory Data Analysis</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Databases</h3>
+                                <ul class="list-unstyled mb-1">
+                                    <li>Oracle SQL, PL/SQL, MySQL, SQL Server</li>
+                                    <li>ER Models, Data Modeling and Design</li>
+                                    <li>SQL Optimization, Triggers, Procedures</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Machine Learning & Deep Learning</h3>
+                                <ul class="list-unstyled mb-1">
+                                    <li>Jupyter Notebooks, Google Colab</li>
+                                    <li>OpenAI, Hugging Faces</li>
+                                    <li>TensorFlow, Keras</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Programming</h3>
+                                <ul class="list-unstyled mb-1">
+                                    <li>Python, R, Java, VS Code</li>
+                                    <li>Eclipse, IntelliJ, NetBeans, JDeveloper</li>
+                                    <li>GitHub, Django, FastAPI</li>
+                                </ul>
+                            </div>
+                            <div class="box">
+                                <h4>Cloud & Web Development</h3>
+                                <ul class="list-unstyled mb-4">
+                                    <li>Google Cloud Platform, Docker</li>
+                                    <li>HTML, CSS, JavaScript, React, Sass</li>
+                                </ul>
+                            </div>
+                            <!-- <div class="box">
+                                <h4>Project Management & Collaboration</h3>
+                                <ul class="list-unstyled mb-0">
+                                    <li>Trello</li>
+                                    <li>Jira</li>
+                                    <li>Scrum</li>
+                                    <li>Agile</li>
+                                </ul>
+                            </div> -->
+                        </div>
+                    </section>
+                    <section id="education">
+                        <h2>Education</h2>
+                        <ul class="list-unstyled">
+                            <li>MS in Computer Science</li>
+                            <li>Purdue University</li>
+                            <li>Graduated 2024 | Overall GPA: 3.8</li>
+                            <li>BS in Computer Science</li>
+                            <li>Huntington University</li>
+                        </ul>
+                    </section>
+                    <section id="extracurricular">
+                        <h2>Extracurricular Activities</h2>
+                        <ul>
+                            <li>Member, Hispanos Unidos at Purdue University</li>
+                            <li>Member, Intervarsity Christian Fellowship at Purdue University</li>
+                            <li>Volunteer and co-leader, Hispanic Ministry at Huntington</li>
+                            <li>Leader and co-founder, Spanish Club at Huntington University</li>
+                            <li>Member, Tennis Team at Huntington University</li>
+                                <ul>
+                                    <li>Two times Doubles Champion, Crossroad League Tennis Team</li>
+                                    <li>Team Champion, Crossroad League Tennis Team playing Nationals</li>
+                                    <li>Team Captain, Tennis Team</li>
+                                </ul>
+                            <li>Spanish Tutor, Huntington University</li>
+                            <li>Member, Technology Services at Huntington University</li>
+                        </ul>
+                    </section>
+                    <section id ="languages">
+                        <h2>Languages</h2>
+                        <ul>
+                            <li>English <span class="text-muted">(Advanced)</span></li>
+                            <li>Spanish <span class="text-muted">(Native)</span></li>
+                            <li>French <span class="text-muted">(Beginner)</span></li>
+                            <li>German <span class="text-muted">(Beginner)</span></li>
+                        </ul>
+                    </section>
+                </aside>
             </div>
         </div>
-    </section> -->
-    <section id="experience">
-        <h2>Work Experience</h2>
-        <h3>Student Service - TAP Projects (Purdue University)</h3>
-        <ul>
-            <li>Coordinated multiple projects with colleagues and professors.</li>
-            <li>Performed data cleaning and wrangling.</li>
-            <li>Conducted QA on code, improving and correcting errors.</li>
-            <li>Analyzed data and created visualizations for clients.</li>
-        </ul>
-        <h3>Senior Software Developer (Cloud Information Solution)</h3>
-        <ul>
-            <li>Migrated ERP software from Oracle Forms to Jdeveloper using Java and Groovy.</li>
-            <li>Optimized, modified, and created features in software databases using PL/SQL.</li>
-            <li>Instructed, coordinated, and assigned tasks to Junior Developers.</li>
-            <li>Interfaced with customers to understand needs and requirements.</li>
-        </ul>
-        <!-- Add other roles similarly -->
-    </section>
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project-card">
-            <h3>Learning Assistant</h3>
-            <p>A tool enabling live voice recording, transcription to text, and post-processing options like summarization, translation, and correction. Users can make notes based on processed transcriptions.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Analysis on Patients Experience in Public Health</h3>
-            <p>Conducted a comprehensive analysis and visualization of public health data across the country, identifying patterns and trends related to patient satisfaction.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Sales Data Analysis</h3>
-            <p>Performed a detailed analysis of sales data, uncovering discrepancies where 50-70% profit correlated with 20-30% in accounting records.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Bowling Scoring System</h3>
-            <p>API leader for a system enabling users to create teams, join leagues, report scores, and access information, along with administrator features for managing leagues and matches.</p>
-            <a href="#">View Project</a>
-        </div>
-        <div class="project-card">
-            <h3>Topos Room Draw Process</h3>
-            <p>Developed a system for room selection at Huntington University, providing tools for students and administrators to streamline the process.</p>
-            <a href="#">View Project</a>
-        </div>
-    </section>
-    <section id="extracurricular">
-        <h2>Extracurricular Activities</h2>
-        <ul>
-            <li>Member, Hispanos Unidos (2024)</li>
-            <li>Leader and co-founder, Spanish Club at Huntington University (2008–2012)</li>
-            <li>Team Champion, Crossroad League Tennis Team (2010)</li>
-            <!-- Add more here -->
-        </ul>
-    </section>
+    </article>
     <footer>
         <p>&copy; 2024 Dennis Martin Vivas. All rights reserved.</p>
     </footer>
