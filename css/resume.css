@@ -6,8 +6,24 @@
 }
 
 @media print {
-    .download-resume, footer {
+    .download-resume, 
+    footer,
+    #languages {
         display: none;
+    }
+    div .image {
+        flex: 0 0 25%;
+    }
+    div .contact-info,
+    div .title {
+        flex: 0 0 50%;
+    }
+    aside {
+        margin-top:1rem;
+    }
+    aside section{
+        width: 50%;
+        float: left;
     }
 }
 
@@ -113,4 +129,8 @@ footer {
 
 footer p {
     margin: 0;
+}
+
+.list-unstyled {
+    padding-left: 10px;
 }
